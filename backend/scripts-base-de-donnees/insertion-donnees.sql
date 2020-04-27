@@ -1,6 +1,6 @@
 /**Données**/
 
-INSERT INTO night.Categorie (idCat, categorie)
+INSERT INTO "DBA".Categorie (idCat, categorie)
 VALUES 
 (01, 'chaises'),
 (02, 'armoires'),
@@ -9,7 +9,7 @@ VALUES
 (05, 'bureux')
 ;
 
-INSERT INTO night.Produits(idProd, produit, categId)
+INSERT INTO "DBA".Produits(idProd, produit, categId)
 VALUES 
 (100,'aman', 01),
 (101,'senem', 01),
