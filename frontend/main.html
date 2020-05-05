@@ -1,1 +1,86 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>IKEA</title>
+		<link rel="stylsheet" type="text/css" href="css/font.css">
+
+  </head>
+	<body>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: Verdana, Arial, Helvetica, "sans serif";
+				font-size: 20px;
+				background-color: #eaeded;
+				color: black;
+			}
+			header {
+				text-align: left;
+				font-size: 30px;
+				background-color: #0003a6;
+				color: white;
+				width: 100%;
+				height: 200px;
+				text-indent: 50px;
+				padding-top: 30px;
+				border-bottom: 10px solid #8e90ff;
+			}
+			#imgheader {
+				display:block;
+				float:left;
+				width:300px;
+				height:150px;
+			}
+
+		</style>
+		<script type="text/javascript">
+
+			var current = 0;
+			function change(what)
+			{
+				document.getElementById("show").src = 'image/armoire1.jpg'+what.value+".png";
+			}
+
+        </script>
+
+	<header id="tit">
+		<img id="imgheader"src="image/ikeo.jpg" >
+
+		<h1 id="titre">
+			Ikeo, toujours la pour vous !
+		</h1>
+	</header>
+
+	<div id="categorie" style="width: 30%;">
+
+		<FORM>
+			<SELECT name="nom" size="1" id="select1" onchange="change(this)">
+				<option value="0" selected="selected">armoires</option>
+				<option>bureaux</option>
+				<option>chaises</option>
+				<option>lit</option>
+				<option>tables</option>
+			</SELECT>
+
+		</FORM>
+		<img src="image/armoire1.jpg" id="show" alt="" />
+		
+	</div>
+
+	</body>
+	<footer class="foot">
+		<div id="end">
+			<br>
+			
+			<h3>
+				Merci d'être venue voir notres site.
+			</h3>
+		</div>
+		<h6>
+			Site réaliser par ..
+		</h6>
+	</footer>
+</html>
 
